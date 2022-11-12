@@ -64,6 +64,7 @@
     "ListItemBlockEnum": {
       "enum": [
         "blockquote",
+        "caption",
         "embedded-asset-block",
         "embedded-entry-block",
         "heading-1",
@@ -116,6 +117,7 @@
       "description": "Map of all Contentful block types. Blocks contain inline or block nodes.",
       "enum": [
         "blockquote",
+        "caption",
         "document",
         "embedded-asset-block",
         "embedded-entry-block",

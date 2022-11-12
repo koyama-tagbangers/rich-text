@@ -42,6 +42,12 @@ export interface Heading6 extends Block {
   content: Array<Inline | Text>;
 }
 
+export interface Caption extends Block {
+  nodeType: BLOCKS.CAPTION;
+  data: EmptyNodeData;
+  content: Array<Inline | Text>;
+}
+
 // Paragraph
 export interface Paragraph extends Block {
   nodeType: BLOCKS.PARAGRAPH;

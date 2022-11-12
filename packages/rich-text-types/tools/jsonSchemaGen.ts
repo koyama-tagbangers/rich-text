@@ -46,6 +46,7 @@ const blockSymbolsMap = new Map([
   [BLOCKS.HEADING_4, 'Heading4'],
   [BLOCKS.HEADING_5, 'Heading5'],
   [BLOCKS.HEADING_6, 'Heading6'],
+  [BLOCKS.CAPTION, 'Caption'],
   [BLOCKS.OL_LIST, 'OrderedList'],
   [BLOCKS.UL_LIST, 'UnorderedList'],
   [BLOCKS.LIST_ITEM, 'ListItem'],

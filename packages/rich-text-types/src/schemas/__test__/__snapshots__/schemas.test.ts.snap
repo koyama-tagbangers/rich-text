@@ -281,6 +281,135 @@ Object {
 }
 `;
 
+exports[`getSchemaWithNodeType returns json schema for each nodeType: caption 1`] = `
+Object {
+  "$ref": "#/definitions/Caption",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": Object {
+    "Caption": Object {
+      "additionalProperties": false,
+      "properties": Object {
+        "content": Object {
+          "items": Object {
+            "anyOf": Array [
+              Object {
+                "$ref": "#/definitions/Inline",
+              },
+              Object {
+                "$ref": "#/definitions/Text",
+              },
+            ],
+          },
+          "type": "array",
+        },
+        "data": Object {
+          "properties": Object {},
+          "type": "object",
+        },
+        "nodeType": Object {
+          "enum": Array [
+            "caption",
+          ],
+          "type": "string",
+        },
+      },
+      "required": Array [
+        "content",
+        "data",
+        "nodeType",
+      ],
+      "type": "object",
+    },
+    "INLINES": Object {
+      "description": "Map of all Contentful inline types. Inline contain inline or text nodes.",
+      "enum": Array [
+        "asset-hyperlink",
+        "embedded-entry-inline",
+        "entry-hyperlink",
+        "hyperlink",
+      ],
+      "type": "string",
+    },
+    "Inline": Object {
+      "additionalProperties": false,
+      "properties": Object {
+        "content": Object {
+          "items": Object {
+            "anyOf": Array [
+              Object {
+                "$ref": "#/definitions/Inline",
+              },
+              Object {
+                "$ref": "#/definitions/Text",
+              },
+            ],
+          },
+          "type": "array",
+        },
+        "data": Object {
+          "$ref": "#/definitions/NodeData",
+        },
+        "nodeType": Object {
+          "$ref": "#/definitions/INLINES",
+        },
+      },
+      "required": Array [
+        "content",
+        "data",
+        "nodeType",
+      ],
+      "type": "object",
+    },
+    "Mark": Object {
+      "additionalProperties": false,
+      "properties": Object {
+        "type": Object {
+          "type": "string",
+        },
+      },
+      "required": Array [
+        "type",
+      ],
+      "type": "object",
+    },
+    "NodeData": Object {
+      "additionalProperties": true,
+      "type": "object",
+    },
+    "Text": Object {
+      "additionalProperties": false,
+      "properties": Object {
+        "data": Object {
+          "$ref": "#/definitions/NodeData",
+        },
+        "marks": Object {
+          "items": Object {
+            "$ref": "#/definitions/Mark",
+          },
+          "type": "array",
+        },
+        "nodeType": Object {
+          "enum": Array [
+            "text",
+          ],
+          "type": "string",
+        },
+        "value": Object {
+          "type": "string",
+        },
+      },
+      "required": Array [
+        "data",
+        "marks",
+        "nodeType",
+        "value",
+      ],
+      "type": "object",
+    },
+  },
+}
+`;
+
 exports[`getSchemaWithNodeType returns json schema for each nodeType: document 1`] = `
 Object {
   "$ref": "#/definitions/Document",
@@ -290,6 +419,7 @@ Object {
       "description": "Map of all Contentful block types. Blocks contain inline or block nodes.",
       "enum": Array [
         "blockquote",
+        "caption",
         "document",
         "embedded-asset-block",
         "embedded-entry-block",
@@ -492,6 +622,7 @@ Object {
     "TopLevelBlockEnum": Object {
       "enum": Array [
         "blockquote",
+        "caption",
         "embedded-asset-block",
         "embedded-entry-block",
         "heading-1",
@@ -2112,6 +2243,7 @@ Object {
       "description": "Map of all Contentful block types. Blocks contain inline or block nodes.",
       "enum": Array [
         "blockquote",
+        "caption",
         "document",
         "embedded-asset-block",
         "embedded-entry-block",
@@ -2269,6 +2401,7 @@ Object {
     "ListItemBlockEnum": Object {
       "enum": Array [
         "blockquote",
+        "caption",
         "embedded-asset-block",
         "embedded-entry-block",
         "heading-1",
@@ -2343,6 +2476,7 @@ Object {
       "description": "Map of all Contentful block types. Blocks contain inline or block nodes.",
       "enum": Array [
         "blockquote",
+        "caption",
         "document",
         "embedded-asset-block",
         "embedded-entry-block",
@@ -2500,6 +2634,7 @@ Object {
     "ListItemBlockEnum": Object {
       "enum": Array [
         "blockquote",
+        "caption",
         "embedded-asset-block",
         "embedded-entry-block",
         "heading-1",
@@ -3532,6 +3667,7 @@ Object {
       "description": "Map of all Contentful block types. Blocks contain inline or block nodes.",
       "enum": Array [
         "blockquote",
+        "caption",
         "document",
         "embedded-asset-block",
         "embedded-entry-block",
@@ -3689,6 +3825,7 @@ Object {
     "ListItemBlockEnum": Object {
       "enum": Array [
         "blockquote",
+        "caption",
         "embedded-asset-block",
         "embedded-entry-block",
         "heading-1",

@@ -12,6 +12,8 @@ export enum BLOCKS {
   HEADING_5 = 'heading-5',
   HEADING_6 = 'heading-6',
 
+  CAPTION = 'caption',
+
   OL_LIST = 'ordered-list',
   UL_LIST = 'unordered-list',
   LIST_ITEM = 'list-item',

@@ -1,5 +1,5 @@
 {
-  "name": "@contentful/rich-text-types",
+  "name": "@koyama-tagbangers/rich-text-types",
   "version": "15.13.2",
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
@@ -8,13 +8,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/contentful/rich-text.git"
+    "url": "https://github.com//koyama-tagbangers/rich-text.git"
   },
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
   },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
   },
   "scripts": {
